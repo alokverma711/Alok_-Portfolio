@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { Toaster } from "react-hot-toast";
+ 
 
 import { Header, Footer, ThemeSwitch } from "@/components";
 import { EXTRA_LINKS, OWNER_NAME } from "@/constants";
@@ -81,15 +81,7 @@ export default function RootLayout({
             {/* footer */}
             <Footer />
 
-            {/* toaster */}
-            <aside>
-              <Toaster
-                position="top-right"
-                toastOptions={{
-                  className: "dark:bg-white/10 dark:text-white/80",
-                }}
-              />
-            </aside>
+            
 
             {/* theme switcher */}
             <aside>
